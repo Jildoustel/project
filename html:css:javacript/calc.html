@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Rekenmachine</h1>
+
+    <input type="number" id="invoer-1" value="1">
+    <input type="number" id="invoer-2" value="2">
+    <button type="button" onclick="telop()">+ Telop</button>
+
+    <script>
+
+        function telop () {
+
+            // middels let maak je er een variabele van
+            let elem1 = document.getElementById('invoer-1')
+            let elem2 = document.getElementById('invoer-2')
+
+           console.log('Resultaat element: ', elem1);
+
+            // waarde van element uitlezen parseInt betekent dat je een waarde maakt van de string
+            let elem1Value = parseInt(elem1.value);
+            let elem2Value = parseInt(elem2.value);
+
+            console.log(elem1Value + elem2Value);
+        }
+
+    </script>
+</body>
+</html>

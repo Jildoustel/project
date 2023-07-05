@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    
+        p {
+            color: blueviolet;
+            font-family: 'OpenSans';
+            font-size: 16px;
+        }
+
+    .green-box {
+            color: green;
+            border: 2px solid lightgreen;
+            font-size: 30px;
+        }
+
+        .blue-box {
+            color: blue;
+            border: 2px dotted aqua;
+            font-size: 20px;
+        }
+
+     #mijn-body {
+        background-color: greenyellow;
+        border: 10px solid darkorange;
+     }
+
+    </style>
+
+</head>
+
+<body id="mijn-body">
+    <h1 class="green-box">Mijn eerste pagina</h1>
+
+    <span class="blue-box">Mijn naam is Jildou</span>
+
+    <p>Dit is mijn eerste paragraaf</p>
+
+    <img style="border: 4px solid rgb(78, 223, 236)" src="https://www.natgeojunior.nl/wp-content/uploads/2021/03/Minden_00567457.jpg">
+
+    <ul> 
+        <li>Punt 1</li>
+        <li>Punt 2</li>
+    </ul>
+
+    <ol>
+        <li>Punt 1</li>
+        <li>Punt 2</li>
+    </ol>
+
+    <script>
+
+        // pop-up in webbrowser
+        alert('Hello world!');
+
+        // pop-up in webbrowser
+        console.log('Hello world!');
+
+        let a= 6; // getal geen quotes - let = waarde
+        let b= "Tekst"; // Tekst (string) heeft enkel of dubbel quotes
+        let c= true // boolean - waar of niet waar, true or false
+        let d = 6.34 // decimale getallen
+
+        // b was string en nu een getal
+        // loosly typed
+        b = 78; 
+        b = false; 
+
+        let f = 1; let g = 5;
+
+        console.log(a); // print 6
+        console.log("a"); // print a
+    
+        //berekeningen
+        let getal_1    = f + g; // + - / *
+        let getal_2    = f * g;
+
+        console.log(getal_1, getal_2); 
+
+        // Function declaration: hij wordt bekend gemaakt maar niet aangeroepen // en hover code die je steeds kunt aanroepen
+        function printIets() {
+            console.log('In function printIets')
+        }
+
+        function optellen() {
+            console.log("Optellen" getal_1 + getal_2)
+        }
+
+        function aftrekken() {
+            console.log("Aftrekken" getal_1 - getal_2)
+        }
+
+        function delenDoor(){
+            console.log("Delen" getal_2 / getal_1)
+        }
+
+        function telop (a,b) {
+            console.log(a+b)
+        }
+
+        telop(3,4)
+
+        // Function call: wordt aangeroepen
+        printIets() 
+        optellen()
+        aftrekken()
+        delenDoor()
+
+</script>
+
+</body>
+</html>
